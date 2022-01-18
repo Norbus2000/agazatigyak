@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "he he he"
+    "na na na"
+    "ar ar as"
+    "fo fo fo"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    padding: 15px;
+}
+h1 {
+    color: lightseagreen;
+}
+
+nav {
+    background-color: lightseagreen;
+}
+
+nav ul li a {
+    filter: brightness(50%);
+    text-decoration: none;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+header {
+    grid-area: he;
+}
+
+nav {
+    grid-area: na;
+}
+
+.tablazat {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.tarolo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+article {
+    grid-area: ar;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: as;
+}
+
+footer {
+    grid-area: fo;
+}
+
+div {
+    padding: 30px;
+}
+
+
+img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+table {
+    box-sizing: border-box;
+    max-width: 200%;
+    height: 75px;
+}
+th,td {
+    text-align: center;
+}
+/*
+tr:nth-child(even) {
+    background-color: grey;
+}
+*/
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-areas: 
+    "he he he"
+    "na na na"
+    "ar ar ar"
+    "as as as"
+    "fo fo fo"
+    ;
+    }
+  }
